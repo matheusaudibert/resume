@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : andythropic (thank u andy, ur insane bro)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+
+\definecolor{AccentColor}{RGB}{0, 32, 96}
+
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+  {\color{AccentColor}\vspace{-4pt}\scshape\raggedright\large}
+  {}{0em}{}[\color{AccentColor}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+\titlespacing*{\section}{0pt}{4pt plus 1pt minus 1pt}{10pt plus 1pt minus 1pt}
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape \textcolor{AccentColor}{\textbf{Matheus Audibert}}} \\ \vspace{1pt}
+    \small
+    São Paulo, SP $|$
+    \href{mailto:matheusaudibert2019@outlook.com}{matheusaudibert2019@outlook.com} $|$
+    \href{https://www.linkedin.com/in/matheusaudibert}{linkedin.com/in/matheusaudibert} $|$
+    (12) 99686-7111 $|$
+    \href{https://github.com/matheusaudibert}{github.com/matheusaudibert} $|$
+    \href{https://audibert.dev}{audibert.dev}
+\end{center}
+
+%-----------SOBRE MIM-----------
+\section{Sobre Mim}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+Engenheiro de Software Full Stack com 22 anos, focado em arquitetura de sistemas e desenvolvimento de software com prática em ambientes cloud e engajado com a área de tecnologia no Brasil. Estou Em busca de uma oportunidade como Engenheiro de Software Júnior.
+}}
+\end{itemize}
+
+%-----------HABILIDADES-----------
+\section{Habilidades}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Linguagens}: Python, Node.js, SQL \\
+\textbf{Cloud \& Infra}: AWS, Terraform, Docker, CI/CD, Pipelines, PRs \\
+\textbf{Banco de Dados}: MySQL, RDS \\
+\textbf{Ferramentas}: Git, GitHub, API REST, Swagger/OpenAPI \\
+\textbf{Conceitos}: Arquitetura de Software, POO, DDD, Deploy, Testes Unitários, Testes de Integração, Scrum, Docs \\
+\textbf{IA}: Desenvolvimento com IA, Claude Code, Devin \\
+\textbf{Idiomas}: Português (Nativo), Inglês (Avançado)
+}}
+\end{itemize}
+
+%-----------EXPERIÊNCIA-----------
+\section{Experiência}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Estagiário de Engenharia de Software}{Set. 2025 -- Jun. 2026}
+    {Itaú Unibanco}{São Paulo, SP}
+    \resumeItemListStart
+      \resumeItem{Desenvolvi um produto interno \textbf{end-to-end} com impacto em múltiplas diretorias, desde a arquitetura e as decisões técnicas até o alinhamento com stakeholders de negócio}
+      \resumeItem{Construí a infraestrutura completa na \textbf{AWS} (ECS, Lambda, Athena, S3, RDS,  IAM, VPC) com o frontend em Python/Streamlit, garantindo uma entrega escalável e segura}
+      \resumeItem{Desenvolvi testes unitários e de integração e atuei na gestão de mudanças, garantindo a qualidade e a estabilidade contínua do produto}
+      \resumeItem{Liderei \textbf{3 estagiários} ao longo do projeto, coordenando entregas técnicas e alinhamentos de negócio}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Educador de Robótica}{Mar. 2023 -- Jul. 2023}
+    {Instituto Federal de São Paulo}{}
+    \resumeItemListStart
+      \resumeItem{Ministrei aulas de lógica de programação e robótica com \textbf{Arduino} para estudantes do ensino médio, com ênfase na criação de robôs autônomos em \textbf{C/C++}}
+      \resumeItem{Preparei equipes para competições regionais e nacionais de robótica}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJETOS-----------
+\section{Projetos}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Aprova} $|$ Python, Streamlit, Gemini}{2025}
+    \resumeItemListStart
+      \resumeItem{Plataforma de educação online para preparação nos principais vestibulares de São Paulo, desenvolvida e \textbf{vencedora do Hackathon Alura + Google}}
+      \resumeItem{Conquistei uma \textbf{bolsa integral} de estudos na FIAP como prêmio pela vitória no hackathon}
+      \resumeItem{Disponível em: \href{https://github.com/matheusaudibert/projeto-aprova}{{github.com/matheusaudibert/projeto-aprova}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Newsletter Bot} $|$ Bot, Node.js, Discord.js, API}{2026}
+    \resumeItemListStart
+      \resumeItem{Bot oficial de notícias de tecnologia do Filipe Deschamps, entregando atualizações diárias no Discord}
+      \resumeItem{Presente em mais de \textbf{100 servidores} no Discord}
+      \resumeItem{Disponível em: \href{https://github.com/matheusaudibert/newsletter-bot}{{github.com/matheusaudibert/newsletter-bot}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Grux} $|$ Node.js, Discord.js, MongoDB, Cache, API}{2026}
+    \resumeItemListStart
+      \resumeItem{Grux é um serviço que facilita o acesso a informações de perfil e presença do Discord através de uma API RESTful e WebSocket}
+      \resumeItem{Monitorando mais de \textbf{20 mil usuários} no Discord}
+      \resumeItem{Disponível em: \href{https://github.com/matheusaudibert/grux}{{github.com/matheusaudibert/grux}}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCAÇÃO-----------
+\section{Educação}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {FIAP}{Ago. 2025 -- Ago. 2028}
+    {Bacharelado em Engenharia de Software}{São Paulo, SP}
+\resumeSubHeadingListEnd
+
+%-----------Engajamento-----------
+\section{Engajamento}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Servidor dos Programadores (Discord)}{2025 -- Presente}
+    {Fundador e Administrador}{}
+    \resumeItemListStart
+      \resumeItem{Fundei e lidero uma comunidade online de programação com mais de \textbf{20 mil membros} no Discord}
+      \resumeItem{Organizo eventos e aulas online e presenciais em São Paulo, democratizando a educação em tecnologia}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Audibert (YouTube)}{2025 -- Presente}
+    {Criador de Conteúdo de Tecnologia}{}
+    \resumeItemListStart
+      \resumeItem{Produzo vídeos sobre programação, explicando conceitos técnicos de forma didática, acessível e divertida}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
